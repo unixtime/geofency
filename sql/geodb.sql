@@ -79,8 +79,3 @@ ALTER TABLE ONLY users
 
 ALTER TABLE ONLY users  
     ADD CONSTRAINT users_username_key UNIQUE (username);
-
-REVOKE ALL ON SCHEMA public FROM PUBLIC;  
-REVOKE ALL ON SCHEMA public FROM postgres;  
-GRANT ALL ON SCHEMA public TO postgres;  
-GRANT ALL ON SCHEMA public TO PUBLIC;
