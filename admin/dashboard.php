@@ -89,30 +89,37 @@ else
     }
 }
 ?>
-<html>
-<head>
-<title>Dashboard</title>
+<html>  
+<head>  
+<title>Dashboard</title>  
 </head>
 
-<body>
-<center><h1>Welcome to Geofency Dashboard</h1></center>
-<hr />
-<h2>Add user</h2>
-<form action="addusersubmit.php" method="post">
-<fieldset>
-<p>
-<label for="username">Username</label>
-<input type="text" id="username" name="username" value="" maxlength="20" />
-</p>
-<p>
-<label for="password">Password</label>
-<input type="password" id="password" name="password" value="" maxlength="20" />
-</p>
-<p>
-<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
-<input type="submit" value="Login" />
-</p>
-</fieldset>
-</form>
-</body>
-</html>
+<body>  
+<center><h1>Welcome to Geofency Dashboard</h1></center>  
+<hr />  
+<h2>Add user</h2>  
+<form action="addusersubmit.php" method="post">  
+<fieldset>  
+<p>  
+<label for="username">Username</label>  
+<input type="text" id="username" name="username" value="" maxlength="20" />  
+</p>  
+<p>  
+<label for="password">Password</label>  
+<input type="password" id="password" name="password" value="" maxlength="20" />  
+</p>  
+<p>  
+<label for="groups">Groups</label>  
+<select name="group_id">  
+<option value="1">Admins</option>  
+<option value="2">Users</option>  
+</select>  
+</p>  
+<p>  
+<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />  
+<input type="submit" value="Add User" />  
+</p>  
+</fieldset>  
+</form>  
+</body>  
+</html>  
