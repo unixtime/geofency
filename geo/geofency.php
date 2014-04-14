@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/lib/DB.php';
+include_once '../admin/lib/DB.php'; 
 $locationid = addslashes($_REQUEST['id']);
 $name	    = addslashes($_REQUEST['name']);
 $device     = addslashes($_REQUEST['device']);
