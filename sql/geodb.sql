@@ -1,4 +1,4 @@
-CREATE DATABASE geoDB  
+CREATE DATABASE geodb  
   WITH OWNER = geoadmin
        ENCODING = 'UTF8'
        TABLESPACE = pg_default
